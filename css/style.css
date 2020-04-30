@@ -4,14 +4,98 @@
     padding: 0;
 }
 
-h1
+.container .content svg
 {
-    color: crimson;
-    font-family: sans-serif;
+    width: 100%;
+    max-width: 800px;
 }
 
-p
+#green-circle-flower
 {
-    color: #3498db;
-    font-family: sans-serif;
+    transform-box: fill-box;
+    animation: green-circle-flower 4s linear infinite;
+}
+
+#pen,
+#writing-hand
+{
+    animation: writing-hand 1s linear infinite alternate;
+}
+
+#waist
+{
+    transform-box: fill-box;
+    animation: waist 1s linear infinite alternate;
+}
+
+#Mountain-part
+{
+    animation: mountain-part 3s linear infinite alternate;
+}
+
+@keyframes green-circle-flower
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+
+    50%
+    {
+        transform: rotate(10deg);
+    }
+
+    100%
+    {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes writing-hand
+{
+    0%
+    {
+        transform: translateX(0deg)
+    }
+
+    100%
+    {
+        transform: translateX(10px)
+    }
+}
+
+@keyframes waist
+{
+    0%
+    {
+        transform: translate(0px);
+    }
+
+    50%
+    {
+        transform: translateY(10px) rotate(-5deg);
+    }
+
+    100%
+    {
+        transform: translate(0px);
+    }
+}
+
+@keyframes mountain-part
+{
+    0%
+    {
+        transform: translateY(0px);
+    }
+
+    50%
+    {
+        transform: translateY(10px);
+    }
+
+    100%
+    {
+        transform: translateY(0px);
+    }
 }
