@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
+    
+     <?php 
+       echo "<h1>Hellow World</h1>"
+    ?>
+    
     <div class="container">
         <div class="content">
             <svg width="1007" height="608" viewBox="0 0 1007 608" fill="none" xmlns="http://www.w3.org/2000/svg">
